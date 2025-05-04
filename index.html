@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vidéo + Informations</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+      gap: 40px;
+    }
+
+    .video-wrapper {
+      flex: 0 0 auto;
+    }
+
+    video {
+      width: 240px;
+      height: 426px;
+      object-fit: cover;
+      background-color: #111;
+      border-radius: 10px;
+    }
+
+    .info-box {
+      max-width: 500px;
+      padding: 20px;
+      background-color: #111;
+      border-radius: 10px;
+    }
+
+    .info-box h2 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #f0f0f0;
+    }
+
+    .info-box p {
+      line-height: 1.6;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="video-wrapper">
+      <video src="final.mp4" autoplay loop controls></video>
+    </div>
+    <div class="info-box">
+      <h2>Titre de la vidéo</h2>
+      <p>
+        Voici une description de la vidéo. Tu peux ajouter ici des informations
+        comme le nom du créateur, la date de publication, les thématiques abordées
+        ou même des liens.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
